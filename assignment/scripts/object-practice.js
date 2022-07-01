@@ -23,13 +23,17 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
-
+let fullName = me.firstName +  " " +  me.lastName;
+// is there another way to add a space between properties? 
+console.log("my full name is", fullName);
 
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+console.log("my first favorite food is",me.favThreeFoods[0]);
+console.log("My last fav food is", me.favThreeFoods[2]);
 
 
 
@@ -39,6 +43,9 @@ console.log('A little about me:', me);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
+console.log("current shoe count it", me.shoeCount );//should be 4 
+console.log("new show count is",me.shoeCount += 1); // should be 5 
+
 
 
 /* 5. Add a new property to an existing object.
@@ -47,3 +54,8 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+console.log("this is about me!", me);
+
+console.log(" adding my favorite color now", me.favoriteColor = "yellow" );//
+
+console.log("testing my new object", me); //favorite color should new be added
